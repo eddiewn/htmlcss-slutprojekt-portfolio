@@ -4,6 +4,15 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: var(--footer-height);
     width: 100%;
+    font-size: 12px;
 }
+
+@media (min-width: 768px){
+    footer{
+        font-size: 16px;
+    }
+}
+
+
