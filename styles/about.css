@@ -6,7 +6,7 @@
     padding: 2rem;
 }
 
-.about-section h1{
+.about-section h2{
     font-size: 32px;
     margin-bottom: 1rem;
 }
@@ -29,7 +29,7 @@
 }
 
 @media (min-width: 1024px){
-    .about-section h1{
+    .about-section h2{
         text-align: center;
     }
 
