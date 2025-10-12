@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    height: 400vh;
+    scroll-behavior: smooth;
+    color: #333;
+}
     /* Header */
 
 header{
+    position: sticky;
+    top: 0;
     width: 100vw;
     height: 100px;
     background-color: orange;
@@ -15,7 +26,7 @@ header{
 }
 
 .navbar{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -23,7 +34,7 @@ header{
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav-links a{
@@ -44,6 +55,27 @@ header{
 
 .nav-links a:hover{
     color: #333;
+}
+
+.introSection{
+    width: 80%;
+    height: 100%;
+    margin: 3rem auto;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.faceImage{
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 768px){
@@ -73,6 +105,11 @@ header{
     }
 
     .nav-links a{
+        font-size: 32px;
+    }
+
+    .introSection{
+        flex-direction: row;
         font-size: 32px;
     }
 }
