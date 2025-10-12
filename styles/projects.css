@@ -57,7 +57,12 @@
     bottom: 1rem;
     background-color: #333;
     color: white;
-    width: 10rem;
+}
+
+.view-all-button{
+    margin-top: 2rem;
+    background-color: #333;
+    color: white;
 }
 
 @media (min-width: 768px){
