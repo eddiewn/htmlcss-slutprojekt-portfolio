@@ -21,7 +21,6 @@ header{
     background-color: #333;
     position: sticky;
     top: 0;
-    width: 100vw;
     height: var(--header-height);
     display: flex;
     align-items: center; 
