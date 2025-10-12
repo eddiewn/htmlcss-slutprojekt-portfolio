@@ -11,7 +11,12 @@
     <link rel="stylesheet" href="/styles/footer.css">
 </head>
 <body>
-    <script>0</script>
+    <script>
+    0
+        // Detta finns för annars förstör det på FireFox, vet inte varför men detta löser det.
+        // https://bugzilla.mozilla.org/show_bug.cgi?id=1404468
+        // https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer
+    </script> 
     <header class="header">
         <nav class="navbar">
             <ul class="nav-links">
@@ -30,7 +35,7 @@
                 <h2>Aspiring Web Developer</h2>
             </div>
             <div>
-                <img class="face-image" src="assets/Home/Images/beautifulFace.webp" alt="faceImage">
+                <img class="face-image" src="assets/Images/beautifulFace.webp" alt="faceImage">
             </div>
         </section>
         <section class="about-section">
@@ -46,10 +51,10 @@
             </div>
         </section>
         <section class="projects-section">
-            <h2>Projects</h2>
+            <h2>Projects Preview</h2>
             <div class="projects-grid">
                 <article class="project-card">
-                    <img class="project-image" src="assets/Home/Images/webshop-project.png" alt="project1">
+                    <img class="project-image" src="assets/Images/webshop-project.png" alt="project1">
                     <h3>Web Shopping Project</h3>
                     <div class="project-description-container">
                         <p>This is a web-based shopping website I created, where users can browse and purchase a variety of products. It features an organized product catalog, a shopping cart for managing selections, and a simple, user-friendly interface for easy navigation. The site allows users to view product details and prices, and it provides a seamless online shopping experience.</p>
@@ -58,7 +63,7 @@
                 </article>
 
                 <article class="project-card">
-                    <img class="project-image" src="assets/Home/Images/wordly-project.png" alt="project1">
+                    <img class="project-image" src="assets/Images/wordly-project.png" alt="project1">
                     <h3>Wordly</h3>
                     <div class="project-description-container">
                         <p>I created a Wordle-style word guessing game where players try to guess a hidden word within a limited number of attempts. After each guess, letters change color to show how close the guess is, making it a fun and interactive puzzle experience.</p>
@@ -67,7 +72,7 @@
                 </article>
 
                 <article class="project-card">
-                    <img class="project-image" src="assets/Home/Images/portfolio.png" alt="project1">
+                    <img class="project-image" src="assets/Images/portfolio.png" alt="project1">
                     <h3>This Portfolio!</h3>
                     <div class="project-description-container">
                         <p>I created this portfolio to showcase my work, skills, and creative projects. It’s built with modern web technologies and designed to reflect my personal style — clean, responsive, and easy to navigate. Each section highlights different aspects of my development journey, from concept to finished product. This project represents my growth as a developer and my commitment to crafting well-designed, user-friendly digital experiences.</p>
@@ -76,7 +81,7 @@
                 </article>
 
                 <article class="project-card">
-                    <img class="project-image" src="assets/Home/Images/quizapp.png" alt="project1">
+                    <img class="project-image" src="assets/Images/quizapp.png" alt="project1">
                     <h3>Quiz App</h3>
                     <div class="project-description-container">
                         <p>I created this quiz website to be a fun and interactive way for people to test their knowledge on all kinds of topics. You can take quizzes, see your scores instantly, and even challenge your friends. I designed it to be simple, engaging, and easy to use, so everyone can enjoy learning while having a little fun.</p>
