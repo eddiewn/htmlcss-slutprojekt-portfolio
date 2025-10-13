@@ -10,11 +10,16 @@
         <link rel="stylesheet" href="../styles/projects.css" />
     </head>
     <body>
+    <script>
+        0
+        // Detta finns för annars förstörs rendering? på FireFox, vet inte varför men detta löser det.
+        // https://bugzilla.mozilla.org/show_bug.cgi?id=1404468
+        // https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer
+    </script> 
         <header class="header">
             <nav class="navbar">
                 <ul class="nav-links">
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="../About/About">About</a></li>
                     <li><a href="../Projects/projects.html">Projects</a></li>
                     <li><a href="../Contact/contact.html">Contact</a></li>
                 </ul>
