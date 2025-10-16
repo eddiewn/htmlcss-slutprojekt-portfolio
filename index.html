@@ -18,7 +18,7 @@
             // https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer
         </script>
         <header class="header">
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Main navigation">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="Projects/projects.html">Projects</a></li>
@@ -37,7 +37,7 @@
                     <img
                         class="face-image"
                         src="assets/Images/beautifulFace.webp"
-                        alt="faceImage"
+                        alt="Portrait of Eddie Wiik Nilsson"
                     />
                 </div>
             </section>
@@ -63,7 +63,6 @@
                     </p>
                 </div>
                 <div class="about-buttons">
-                    <a class="button" href="About/about.html">Read more</a>
                     <a class="button" download href="assets/Eddie_CV.pdf"
                         >Download CV</a
                     >
@@ -75,8 +74,8 @@
                     <article class="project-card">
                         <img
                             class="project-image"
-                            src="assets/Images/webshop-project.png"
-                            alt="project1"
+                            src="assets/Images/webshop-project.webp"
+                            alt="Web shop showcase image"
                         />
                         <h3>Web Shopping Project</h3>
                         <div class="project-description-container">
@@ -95,6 +94,7 @@
                             class="button project-button"
                             target="_blank"
                             href="https://webshoppingdeluxe.netlify.app/"
+                            aria-label="View the Web Shopping Project website"
                             >View Project</a
                         >
                     </article>
@@ -102,8 +102,8 @@
                     <article class="project-card">
                         <img
                             class="project-image"
-                            src="assets/Images/wordly-project.png"
-                            alt="project1"
+                            src="assets/Images/wordly-project.webp"
+                            alt="wordly-showcase-image"
                         />
                         <h3>Wordly</h3>
                         <div class="project-description-container">
@@ -120,6 +120,7 @@
                             class="button project-button"
                             target="_blank"
                             href="https://github.com/eddiewn/wordly"
+                            aria-label="View the Wordly Project website"
                             >View Project</a
                         >
                     </article>
@@ -127,8 +128,8 @@
                     <article class="project-card">
                         <img
                             class="project-image"
-                            src="assets/Images/portfolio.png"
-                            alt="project1"
+                            src="assets/Images/portfolio.webp"
+                            alt="portfolio-showcase-image"
                         />
                         <h3>This Portfolio!</h3>
                         <div class="project-description-container">
@@ -145,7 +146,10 @@
                                 experiences.
                             </p>
                         </div>
-                        <a class="button project-button" target="_blank" href=""
+                        <a class="button project-button" 
+                        target="_blank" 
+                        href=""                            
+                        aria-label="View the Portfolio Project website"                        
                             >View Project</a
                         >
                     </article>
@@ -153,8 +157,8 @@
                     <article class="project-card">
                         <img
                             class="project-image"
-                            src="assets/Images/quizapp.png"
-                            alt="project1"
+                            src="assets/Images/quizapp.webp"
+                            alt="quizapp-showcase-image"
                         />
                         <h3>Quiz App</h3>
                         <div class="project-description-container">
@@ -172,6 +176,7 @@
                             class="button project-button"
                             target="_blank"
                             href="https://rad-gumdrop-180874.netlify.app/"
+                            aria-label="View quiz app project website"
                             >View Project</a
                         >
                     </article>
@@ -180,6 +185,8 @@
                     class="button view-all-button"
                     target="_blank"
                     href="Projects/projects.html"
+                    aria-label="View all projects"
+
                     >View All Projects</a
                 >
             </section>
