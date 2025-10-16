@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="contact.css">
-</head>
-<body>
-    <script>
-        0
-        // Detta finns för annars förstörs rendering? på FireFox, vet inte varför men detta löser det.
-        // https://bugzilla.mozilla.org/show_bug.cgi?id=1404468
-        // https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer
-    </script> 
-    <header class="header">
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../Projects/projects.html">Projects</a></li>
-                <li><a href="../Contact/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="contact-section">
-            <div class="contact-container">
-                <div class="contact-text">
-                    <h1>Get in Touch</h1>
-                    <h2>I'd like to hear from you!</h2>
-                    <p>If you have any inquires or just want to say hi, please use the contact form!</p>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../styles/index.css" />
+        <link rel="stylesheet" href="../styles/footer.css" />
+        <link rel="stylesheet" href="contact.css" />
+    </head>
+    <body>
+        <script>
+            0;
+            // Detta finns för annars förstörs rendering? på FireFox, vet inte varför men detta löser det.
+            // https://bugzilla.mozilla.org/show_bug.cgi?id=1404468
+            // https://stackoverflow.com/questions/21147149/flash-of-unstyled-content-fouc-in-firefox-only-is-ff-slow-renderer
+        </script>
+        <header class="header">
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Projects/projects.html">Projects</a></li>
+                    <li><a href="../Contact/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="contact-section">
+                <div class="contact-container">
+                    <div class="contact-text">
+                        <h1>Get in Touch</h1>
+                        <h2>I'd like to hear from you!</h2>
+                        <p>
+                            If you have any inquires or just want to say hi,
+                            please use the contact form!
+                        </p>
+                    </div>
+                    <form class="contact-form">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" />
+
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" />
+
+                        <label for="email">Email*</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            aria-required="true"
+                        />
+
+                        <label for="message">Message*</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required
+                            aria-required="true"
+                        ></textarea>
+
+                        <button class="button" type="submit">
+                            Send Message
+                        </button>
+                    </form>
                 </div>
-                <form class="contact-form">
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name" name="first-name">
-
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name">
-
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
-
-                    <label for="message">Message*</label>
-                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-
-                    <button class="button" type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <address>
-            <p>&copy; 2025 Eddie Wiik Nilsson. All rights reserved.</p>
-        </address>
-    </footer>
-</body>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <p>&copy; 2025 Eddie Wiik Nilsson. All rights reserved.</p>
+            </address>
+        </footer>
+    </body>
 </html>
