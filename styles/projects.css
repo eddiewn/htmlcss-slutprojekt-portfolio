@@ -34,6 +34,11 @@
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: scale 0.3s ease;
+}
+
+.project-card:hover{
+    scale: 105%;
 }
 
 .project-image{

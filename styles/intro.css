@@ -1,3 +1,8 @@
+span{
+    margin: 0;
+    padding: 0;
+}
+
 .intro-section{    
     width: 100%;
     height: calc(100vh - var(--header-height));
@@ -17,6 +22,20 @@
     border-radius: 50%;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.name-div{
+    font-size: 0px;
+}
+
+.name-div span{
+    font-size: 64px;
+    transition: transform 0.3s ease;
+      display: inline-block;
+}
+
+.name-div span:hover{
+    transform: translateY(-50px);
 }
 
 @media (min-width: 768px){
