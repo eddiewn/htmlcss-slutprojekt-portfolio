@@ -33,17 +33,17 @@
                     <p>If you have any inquires or just want to say hi, please use the contact form!</p>
                 </div>
                 <form class="contact-form" action="">
-                    <label for="name">First Name</label>
-                    <input type="text" id="name" name="first-name">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="firstName" name="first-name">
 
-                    <label for="name">Last Name</label>
-                    <input type="text" id="name" name="first-name">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="lastName" name="last-name">
 
                     <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required aria-required="true">
 
                     <label for="message">Message*</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
 
                     <button class="button" type="submit">Send Message</button>
 
